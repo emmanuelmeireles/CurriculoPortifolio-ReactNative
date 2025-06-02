@@ -48,3 +48,27 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+
+
+
+# CurriculoPortifolio-ReactNative
+para informacao
+
+
+# Crie um Aplicativo React Native que seja o seu currículo / portfólio:
+Capriche no visual do seu aplicativo
+Utilize Expo Router para navegar entre as diversas telas do seu App (no mínimo: Home, Sobre (com todas as tecnologias / módulos que você utilizou para desenvolver o App), Experiência Acadêmica, Experiência Profissional, Projetos e Jogo
+O jogo que você irá implementar é a implementação do Jogo Senha (https://en.wikipedia.org/wiki/Bulls_and_Cows) [Você deve exibir uma lista com todas as tentativas anteriores e o resultado de cada uma delas. A lista deve ficar em ordem reversa, para que a última tentativa fique mais próxima do input de digitação. Você deve colocar um botão que exiba um Alert com a combinação aleatória escolhida pelo site). Você deve exibir mensagem que o jogo acabou (ou por que o usuário acertou a senha, ou por que já realizou 10 tentativas). Quando o jogo acaba, você deve exibir também um botão para jogar novamente.
+
+# A entrega desta atividade consiste em anexar:
+Link para o seu seu código no github
+Link para o seu App publicado no Expo
+vídeo de até 60 segundos mostrando o seu App rodando em um celular ou um emulador (não pode web)
+
+
+
+#https://www.youtube.com/watch?v=2Rno7uX0MlU
+
+#https://docs.expo.dev/tutorial/add-navigation/

@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native'
 
 export default function Projects() {
   const handleOpenRepo = () => {
-    Linking.openURL('https://github.com/emmanuelmeireles/seu-repositorio-do-jogo');
+    Linking.openURL('https://github.com/emmanuelmeireles/secret-Number.git');
   };
 
   return (
@@ -16,10 +16,7 @@ export default function Projects() {
         <Text style={styles.buttonText}>Ver repositório do jogo</Text>
       </TouchableOpacity>
       {/* 
-        Aqui você pode futuramente importar e renderizar o componente do seu jogo, 
-        caso ele seja compatível com React Native.
-        Exemplo:
-        <MeuJogo />
+      
       */}
     </View>
   );

@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 export default function About() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Sobre o Projeto</Text>
+      <Text style={styles.title}>CURRICULO / PORTIFÓLIO </Text>
       <Text style={styles.text}>
         Este aplicativo foi desenvolvido utilizando as seguintes tecnologias e módulos:
       </Text>

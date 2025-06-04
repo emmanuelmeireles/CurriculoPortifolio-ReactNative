@@ -1,2 +1,0 @@
-# CurriculoPortifolio-ReactNative
-para informacao

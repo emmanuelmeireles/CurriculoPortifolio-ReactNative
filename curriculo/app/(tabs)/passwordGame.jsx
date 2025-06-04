@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, FlatList, Alert, TouchableOpacity } from 'react-native';
 
-// Função para gerar uma senha aleatória de 4 dígitos únicos
 function generatePassword() {
   let digits = [];
   while (digits.length < 4) {
@@ -11,7 +10,6 @@ function generatePassword() {
   return digits.join('');
 }
 
-// Função para calcular Bulls and Cows
 function getBullsAndCows(password, guess) {
   let bulls = 0, cows = 0;
   for (let i = 0; i < 4; i++) {
@@ -88,7 +86,6 @@ export default function PasswordGame() {
       <FlatList
         data={attempts}
         keyExtractor={(_, idx) => idx.toString()}
-        inverted
         style={styles.attemptsList}
         renderItem={({ item, index }) => (
           <View style={styles.attemptItem}>
@@ -111,76 +108,16 @@ export default function PasswordGame() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#63783d',
-    padding: 24,
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: 'bold',
-    color: 'white',
-    marginBottom: 16,
-    textAlign: 'center',
-  },
-  inputContainer: {
-    flexDirection: 'row',
-    marginBottom: 16,
-    alignItems: 'center',
-    gap: 8,
-  },
-  input: {
-    backgroundColor: 'white',
-    borderRadius: 6,
-    padding: 8,
-    fontSize: 18,
-    width: 160,
-    marginRight: 8,
-  },
-  attemptsList: {
-    width: '100%',
-    marginTop: 8,
-    marginBottom: 16,
-  },
-  attemptItem: {
-    backgroundColor: '#405a23',
-    padding: 10,
-    borderRadius: 6,
-    marginBottom: 6,
-  },
-  attemptText: {
-    color: 'white',
-    fontSize: 16,
-  },
-  emptyText: {
-    color: 'white',
-    fontStyle: 'italic',
-    textAlign: 'center',
-    marginTop: 16,
-  },
-  revealButton: {
-    backgroundColor: '#405a23',
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    borderRadius: 8,
-    marginBottom: 16,
-  },
-  revealButtonText: {
-    color: 'white',
-    fontWeight: 'bold',
-    fontSize: 15,
-  },
-  gameOverContainer: {
-    marginTop: 24,
-    alignItems: 'center',
-  },
-  gameOverText: {
-    color: 'white',
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginBottom: 12,
-    textAlign: 'center',
-  },
+  container: { flex: 1, backgroundColor: '#63783d', padding: 24, alignItems: 'center', justifyContent: 'flex-start' },
+  title: { fontSize: 22, fontWeight: 'bold', color: 'white', marginBottom: 16, textAlign: 'center' },
+  inputContainer: { flexDirection: 'row', marginBottom: 16, alignItems: 'center', gap: 8 },
+  input: { backgroundColor: 'white', borderRadius: 6, padding: 8, fontSize: 18, width: 160, marginRight: 8 },
+  attemptsList: { width: '100%', marginTop: 8, marginBottom: 16 },
+  attemptItem: { backgroundColor: '#405a23', padding: 10, borderRadius: 6, marginBottom: 6 },
+  attemptText: { color: 'white', fontSize: 16 },
+  emptyText: { color: 'white', fontStyle: 'italic', textAlign: 'center', marginTop: 16 },
+  revealButton: { backgroundColor: '#405a23', paddingVertical: 8, paddingHorizontal: 16, borderRadius: 8, marginBottom: 16 },
+  revealButtonText: { color: 'white', fontWeight: 'bold', fontSize: 15 },
+  gameOverContainer: { marginTop: 24, alignItems: 'center' },
+  gameOverText: { color: 'white', fontSize: 18, fontWeight: 'bold', marginBottom: 12, textAlign: 'center' },
 });

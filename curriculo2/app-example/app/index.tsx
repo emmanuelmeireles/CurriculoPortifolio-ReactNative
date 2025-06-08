@@ -11,7 +11,7 @@ export default function HomePage() {
           source={require('../../assets/emmanuel_meirelles.jpg')} // <-- **MUDE O CAMINHO DA SUA IMAGEM AQUI**
           style={styles.profileImage}
         />
-        <Text style={styles.profileName}>Emmanuel Meirelles</Text>
+        <Text style={styles.profileName}>Emmanuel Meireles</Text>
         <Text style={styles.profileTitle}>Desenvolvedor Fullstack</Text>
       </View>
       {/* Fim da Seção da Foto de Perfil e Nome */}
